@@ -8,8 +8,8 @@ import { getVisibleContacts } from 'redux/selectors';
 import { addContact } from 'redux/contactsSlice';
 
 // Генерація унікальних ідентифікаторів для полів форми
-nameInputId = nanoid();
-numberInputId = nanoid();
+const nameInputId = nanoid();
+const numberInputId = nanoid();
 
 const ContactForm = () => {
   const [name, setName] = useState('');
@@ -19,7 +19,7 @@ const ContactForm = () => {
   const dispatch = useDispatch();
 
   // Обрабка відправки форми
-  handleSubmit = event => {
+  const handleSubmit = event => {
     event.preventDefault();
 
     const isInContacts = contacts.some(
