@@ -39,7 +39,7 @@ const ContactForm = () => {
   };
 
   // Обробка зміни значень полів форми
-  handleChange = event => {
+  const handleChange = event => {
     const { name, value } = event.target;
     switch (name) {
       case 'name':
