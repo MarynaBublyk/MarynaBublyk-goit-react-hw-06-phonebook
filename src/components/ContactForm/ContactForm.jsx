@@ -4,8 +4,8 @@ import { Form, Label, Button, Input } from './ContactForm.styled';
 import { ReactComponent as AddIcon } from '../icons/add.svg';
 
 import { useSelector, useDispatch } from 'react-redux';
-import { getVisibleContacts } from 'redux/selectors';
-import { addContact } from 'redux/contactsSlice';
+import { getVisibleContacts } from '../../redux/selectors';
+import { addContact } from '../../redux/contactsSlice';
 
 // Генерація унікальних ідентифікаторів для полів форми
 const nameInputId = nanoid();
@@ -81,7 +81,7 @@ const ContactForm = () => {
       </Label>
 
       <Button type="submit">
-        <AddIcon fill="#f08080" width="25" height="25" />
+        <AddIcon fill="#cc0000" width="25" height="25" />
         Add contact
       </Button>
     </Form>

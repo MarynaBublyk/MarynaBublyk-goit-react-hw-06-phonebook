@@ -3,8 +3,8 @@ import { List, Item, Button } from './ContactList.styled';
 import { ReactComponent as DeleteIcon } from '../icons/delete.svg';
 
 import { useSelector, useDispatch } from 'react-redux';
-import { getVisibleContacts } from 'redux/selectors';
-import { removeContact } from 'redux/contactsSlice';
+import { getVisibleContacts } from '../../redux/selectors';
+import { removeContact } from '../../redux/contactsSlice';
 
 // Компонент списку контактів
 const ContactList = () => {

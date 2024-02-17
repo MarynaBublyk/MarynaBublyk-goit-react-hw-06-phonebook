@@ -7,7 +7,7 @@ export const Form = styled.form`
   padding: 12px;
   background-color: rgba(0, 0, 0, 0.1);
   // border: 3px solid #008000;
-  border: 3px solid #f08080;
+  border: 3px solid #cc0000;
   border-radius: 4px;
 `;
 
@@ -15,7 +15,7 @@ export const Label = styled.label`
   display: flex;
   flex-direction: column;
   margin-bottom: 16px;
-  color: #f08080;
+  color: #cc0000;
   font-size: 20px;
 `;
 
@@ -23,6 +23,7 @@ export const Input = styled.input`
   padding: 8px 12px;
   font: inherit;
   cursor: pointer;
+  border: 1px solid #cc0000;
 `;
 
 export const Button = styled.button`
@@ -30,8 +31,8 @@ export const Button = styled.button`
   font: inherit;
   cursor: pointer;
   border-radius: 4px;
-  border: 3px solid #f08080;
-  color: #f08080;
+  border: 3px solid #cc0000;
+  color: #cc0000;
   font-size: 20px;
   display: flex;
   align-items: center;
